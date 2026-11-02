@@ -1,7 +1,7 @@
 # 📊 Activity Tracker
 
 <p align="center">
-  <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80" alt="Activity Tracker Banner" width="100%" />
+  <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80" alt="Activity Tracker Banner" width="100%" />
 </p>
 
 <p align="center">
@@ -11,28 +11,42 @@
   <a href="#status"><img src="https://img.shields.io/badge/Status-Active-22C55E?style=for-the-badge" alt="Status" /></a>
 </p>
 
+<p align="center">
+  <strong>Track your daily activities, monitor your time, and turn routine into measurable progress.</strong>
+</p>
+
 ---
 
 ## 🧭 Overview
 
-Activity Tracker is a JavaFX desktop application designed to help users track daily activities, monitor how much time they spend on each task, and review productivity trends over time. The app supports personal habit tracking for activities such as studying, exercising, reading, and work-related routines.
+Activity Tracker is a JavaFX desktop application designed to help users log daily activities, analyze time usage, and uncover productivity patterns. It is a lightweight and practical tool for personal habit tracking, whether you want to monitor study time, exercise routines, reading sessions, or work-related tasks.
 
-This project is ideal for managing time effectively while also serving as a practical example of Java GUI development, file persistence, and basic data analysis.
+The project combines an intuitive graphical interface with CSV-based persistence and built-in analytics, making it a strong example of practical Java development for real-world productivity needs.
 
 ---
 
-## ✨ Features
+## ✨ Why This Project?
+
+- Simple, clean interface for daily usage
+- Lightweight desktop app with no external database required
+- Helps users understand how time is spent
+- Great project for learning JavaFX, file handling, and analytics
+- Easy to extend with new features and reporting tools
+
+---
+
+## 🚀 Key Features
 
 <div align="center">
 
 | Feature | Description |
 | --- | --- |
-| 📝 Activity Logging | Add activities with a name, duration, and date |
-| 📊 Analytics Dashboard | View most frequent activities and total time spent |
-| 💾 File Persistence | Save and reload data using a CSV file |
-| 📅 Daily Summaries | Track time spent by date |
-| 🧠 Productivity Insights | Analyze patterns in your personal routine |
-| 🖥️ JavaFX UI | Clean desktop interface for fast daily use |
+| 📝 Activity Logging | Add activities with a custom name, duration, and date |
+| 📊 Analytics Dashboard | Review total time, frequency, and daily summaries |
+| 💾 Persistent Storage | Save and reload records from a local CSV file |
+| 📅 Time Tracking | Track how much time you devote to each activity |
+| 🧠 Productivity Insights | Identify your most frequent and most time-consuming routines |
+| 🖥️ JavaFX Interface | A polished desktop experience for daily tracking |
 
 </div>
 
@@ -41,9 +55,9 @@ This project is ideal for managing time effectively while also serving as a prac
 ## 🏗️ Technology Stack
 
 - Java 17+
-- JavaFX for the GUI
-- CSV-based local persistence
-- OOP structure with modular classes for analytics and file handling
+- JavaFX
+- CSV file-based persistence
+- Object-oriented application design
 
 ---
 
@@ -60,13 +74,23 @@ Activity-tracker/
 └── out/
 ```
 
-### File Descriptions
+### File Overview
 
-- `MainApp.java` – JavaFX application and interface logic
-- `Activity.java` – model class for activity records
-- `Analytics.java` – summary and productivity calculation methods
-- `FileHandler.java` – CSV read/write utilities
-- `activities.csv` – stored user activity data
+- `MainApp.java` – JavaFX interface and workflow logic
+- `Activity.java` – activity data model with conversion helpers
+- `Analytics.java` – summary and calculation logic
+- `FileHandler.java` – CSV read and write operations
+- `activities.csv` – saved user activity records
+
+---
+
+## 🖼️ App Preview
+
+<p align="center">
+  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80" alt="Project Interface Preview" width="80%" />
+</p>
+
+This project is designed to give users a straightforward dashboard for recording and reviewing activity history with minimal friction.
 
 ---
 
@@ -76,7 +100,7 @@ Before running the project, ensure you have:
 
 - Java JDK 17 or later
 - JavaFX SDK installed and configured
-- IntelliJ IDEA, Eclipse, or VS Code with Java support
+- An IDE such as IntelliJ IDEA, Eclipse, or VS Code
 
 ---
 
@@ -89,7 +113,7 @@ git clone https://github.com/aklilut40-code/Activity-tracker.git
 cd Activity-tracker
 ```
 
-### 2) Set JavaFX path
+### 2) Set your JavaFX path
 
 ```bash
 export PATH_TO_FX=/path/to/javafx-sdk/lib
@@ -105,21 +129,22 @@ java --module-path "$PATH_TO_FX" --add-modules javafx.controls,javafx.fxml -cp o
 
 ---
 
-## 🧪 Usage
+## 🧪 How to Use
 
-1. Enter an activity name.
-2. Input the duration in minutes.
-3. Select the date.
-4. Click `ADD ACTIVITY`.
-5. Save your records using `SAVE TO FILE`.
-6. Load prior records with `LOAD FROM FILE`.
-7. Open the analytics panel to review insights.
+1. Open the application.
+2. Enter the activity name.
+3. Enter the time in minutes.
+4. Select the date.
+5. Click `ADD ACTIVITY`.
+6. Save your entries using `SAVE TO FILE`.
+7. Load records with `LOAD FROM FILE`.
+8. Open `ANALYZE DATA` for summaries and insights.
 
 ---
 
 ## 📄 Data Format
 
-The application stores activity data in `activities.csv` using the following format:
+The application stores data in `activities.csv` using the following structure:
 
 ```csv
 Studying,45,2026-11-01
@@ -137,41 +162,42 @@ Each row contains:
 
 ## 📊 Analytics Included
 
-The project includes logic for:
+The app includes built-in functionality for:
 
-- total time spent per activity
+- total minutes spent per activity
 - most frequent activity
-- daily time summaries
-- weekly summaries
+- daily summary totals
+- weekly summary totals
 - average duration per activity
 
 ---
 
-## 🧭 Project Status
+## 🧭 Status
 
-This project is currently active and functional as a JavaFX activity tracking app for personal productivity and learning.
+This project is currently active and serves as a functional JavaFX productivity tracker for personal use and learning.
 
 ---
 
 ## 📝 License
 
-This project is provided for educational and personal use. If you plan to distribute or modify it publicly, verify whether a formal license is required by your institution or organization.
+This project is intended for educational and personal use. If you plan to distribute or modify it publicly, please review whether a formal license is required by your institution or organization.
 
 ---
 
-## 🌱 Future Improvements
+## 🌱 Future Enhancements
 
-Possible future enhancements include:
+Potential improvements include:
 
-- activity categories and filters
-- charts and visual dashboards
+- category-based activity filtering
+- visual charts and reporting
 - database-backed storage
-- advanced export features
-- weekly and monthly reporting
-- user profile support
+- search and sorting tools
+- export to CSV, PDF, or Excel
+- monthly and yearly summaries
+- user profile management
 
 ---
 
 <p align="center">
-  <strong>Built with JavaFX to make daily habit tracking simple and effective.</strong>
+  <strong>Built to make daily activity tracking simple, effective, and insightful.</strong>
 </p>
