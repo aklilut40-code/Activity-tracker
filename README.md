@@ -1,8 +1,14 @@
-# Activity Tracker
+# 📊 Activity Tracker
+
+<p align="center">
+  <strong>Track your daily activities, monitor time spent, and uncover productivity trends.</strong>
+</p>
+
+---
+
+## ✨ Overview
 
 A JavaFX desktop application for tracking daily activities, monitoring time spent, and analyzing productivity patterns. Designed for personal use, the app helps users log activities such as studying, exercise, reading, and work sessions while keeping a historical record in a CSV file.
-
-## Overview
 
 Activity Tracker provides a simple and intuitive interface to:
 
@@ -13,7 +19,9 @@ Activity Tracker provides a simple and intuitive interface to:
 
 The application is ideal for users who want a lightweight productivity tool without the complexity of a larger database-backed system.
 
-## Features
+---
+
+## 🚀 Features
 
 - Add activities with custom names and duration in minutes
 - Select the date for each activity entry
@@ -25,13 +33,17 @@ The application is ideal for users who want a lightweight productivity tool with
 - Clear the current table view with confirmation
 - Clean JavaFX desktop interface for easy daily usage
 
-## Technology Stack
+---
+
+## 🧩 Technology Stack
 
 - Java
 - JavaFX
 - CSV file-based persistence
 
-## Project Structure
+---
+
+## 📁 Project Structure
 
 ```text
 Activity-tracker/
@@ -52,7 +64,9 @@ Activity-tracker/
 - `FileHandler.java` – CSV read/write operations
 - `activities.csv` – stored activity records
 
-## Prerequisites
+---
+
+## ✅ Prerequisites
 
 Before running the project, ensure you have:
 
@@ -60,7 +74,9 @@ Before running the project, ensure you have:
 - JavaFX SDK configured on your machine
 - An IDE such as IntelliJ IDEA, Eclipse, or VS Code, or the command-line Java toolchain
 
-## Setup
+---
+
+## ⚙️ Setup
 
 1. Clone the repository:
 
@@ -73,7 +89,9 @@ cd Activity-tracker
 
 3. Set the JavaFX module path to your local JavaFX `lib` directory.
 
-## Running the Application
+---
+
+## ▶️ Running the Application
 
 Compile and run the project from the terminal:
 
@@ -89,7 +107,9 @@ Replace `$PATH_TO_FX` with the actual path to your JavaFX installation, for exam
 export PATH_TO_FX=/path/to/javafx-sdk/lib
 ```
 
-## Usage
+---
+
+## 🧪 Usage
 
 1. Open the application.
 2. Enter the activity name.
@@ -100,7 +120,9 @@ export PATH_TO_FX=/path/to/javafx-sdk/lib
 7. Use `LOAD FROM FILE` to read saved records.
 8. Use `ANALYZE DATA` to view summaries and analytics.
 
-## Data Format
+---
+
+## 📁 Data Format
 
 The app stores activity records in `activities.csv` using the following format:
 
@@ -116,7 +138,9 @@ Each row contains:
 - duration in minutes
 - date in `yyyy-MM-dd` format
 
-## Example Analytics
+---
+
+## 📈 Analytics
 
 The analytics module supports calculations such as:
 
@@ -126,7 +150,9 @@ The analytics module supports calculations such as:
 - weekly summary totals
 - average duration per activity
 
-## Project Goals
+---
+
+## 🎯 Project Goals
 
 This project demonstrates practical Java development concepts, including:
 
@@ -136,11 +162,15 @@ This project demonstrates practical Java development concepts, including:
 - data analysis in Java
 - application state management
 
-## License
+---
+
+## 📝 License
 
 This project is provided for educational and personal use. If you plan to distribute or modify it for public use, please check whether a specific license is required by your institution or organization.
 
-## Future Improvements
+---
+
+## 🔮 Future Improvements
 
 Potential enhancements for a future version include:
 
